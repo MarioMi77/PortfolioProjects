@@ -52,7 +52,7 @@ WHERE continent is not null
 Group by Location
 order by TotalDeathCount desc
 
---LETS BREAK THINGS DOWN BY CONTINENT
+--continent breakdown
 
 Select continent, MAX(cast(Total_deaths as int)) as TotalDeathCount
 FROM PortfolioProject..CovidDeath
